@@ -1,0 +1,26 @@
+[
+    {
+        "id": "IGA",
+        "img": "/img/exp1.png",
+        "alt": "IGA - services",
+        "title": "IGA - services",
+        "date": "Nov 2022 - June 2024",
+        "description": [
+            "I worked at IGA Extra des Grives as a cashier and a customer service representative.",
+            "I was responsible for cashing out customers, answering their questions and helping them find products.",
+            "I also had to keep the store clean and organized."
+        ]
+    },
+    {
+        "id": "Accountant-Assistance",
+        "img": "/img/exp2.png",
+        "alt": "Accountant-Assistance",
+        "title": "Accountant Assistance",
+        "date": "March 17th 2025",
+        "description": [
+            "I worked for a day as an assistant to an accounter at Exo Construction.",
+            "I was responsible for helping her with the paperwork and organizing the files.",
+            "It was also the first time I'd had to make and send an invoice to someone."
+        ]    
+    }
+]

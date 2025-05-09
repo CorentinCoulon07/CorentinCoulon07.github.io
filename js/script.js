@@ -41,3 +41,53 @@ document.querySelectorAll('nav a').forEach(link => {
     });
 });
 
+function loadExperiences() {
+    fetch('/config/experiences.json')
+        .then(res => res.json())
+        .then(experiences => {
+            const container = document.getElementById('experiences');
+            experiences.forEach(exp => {
+                const div = document.createElement('div');
+                div.id = `exp-${exp.id}`;
+                div.className = 'experience';
+                div.innerHTML = `
+                    <img src="${exp.img}" alt="${exp.alt}" class="experience-img">
+                    <div class="label">
+                        <div class="title">
+                            <h3>${exp.title}</h3>
+                            <h4>${exp.date}</h4>
+                        </div>
+                        <p>${exp.description.join(' ')}</p>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        });
+}
+
+function loadProjects() {
+    fetch('/config/projects.json')
+        .then(res => res.json())
+        .then(projects => {
+            const container = document.getElementById('projects');
+            projects.forEach(prj => {
+                const div = document.createElement('div');
+                div.id = `prj-${prj.id}`;
+                div.className = 'project';
+                div.innerHTML = `
+                    <div class="label">
+                        <div class="title">
+                            <h3>${prj.title}</h3>
+                            <h4>${prj.date}</h4>
+                        </div>
+                        <p>${prj.description.join(' ')}</p>
+                    </div>
+                    <img src="${prj.img}" alt="${prj.alt}" class="project-img">
+                `;
+                container.appendChild(div);
+            });
+        });
+}
+
+loadExperiences();
+loadProjects();
