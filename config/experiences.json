@@ -1,6 +1,18 @@
 [
     {
-        "id": "IGA",
+        "id": "lacite",
+        "img": "/img/etd1.png",
+        "alt": "La Cité",
+        "title": "La Cité",
+        "date": "Sept 2022 - June 2024",
+        "description": [
+            "I studied at La Cité in computer programming.",
+            "I learned about programming languages such as Java, C#, and Javascript.",
+            "I also learned about web development, Databases, and project management."
+        ]
+    },
+    {
+        "id": "iga",
         "img": "/img/exp1.png",
         "alt": "IGA - services",
         "title": "IGA - services",
@@ -12,7 +24,7 @@
         ]
     },
     {
-        "id": "Accountant-Assistance",
+        "id": "accountant-assistance",
         "img": "/img/exp2.png",
         "alt": "Accountant-Assistance",
         "title": "Accountant Assistance",

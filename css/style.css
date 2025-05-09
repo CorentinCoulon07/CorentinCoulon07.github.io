@@ -180,6 +180,10 @@ footer {
     bottom: 0;
 }
 
+footer p {
+    margin: 5px;
+}
+
 @media (max-width: 750px) {
     #nav-button {
         display: block; /* Show the nav button */

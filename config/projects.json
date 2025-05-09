@@ -4,7 +4,7 @@
         "img": "/img/prj1.png",
         "alt": "Cact-High",
         "title": "Cact-High",
-        "date": "December 2019",
+        "date": "Dec 2019 - Today",
         "description": [
             "Cact-high is a board game I worked on for the last 5 years.",
             "It's a card game that oposes 2 to 8 players in a cactus war where they have to destroy the other's cactus.",
@@ -16,7 +16,7 @@
         "img": "/img/prj2.png",
         "alt": "ClipOS",
         "title": "ClipOS",
-        "date": "January 2025",
+        "date": "Jan 2025 - April 2025",
         "description": [
             "ClipOS is a self hosted website I made to make it easier for my friends and I to share our video game clips.",
             "The website is built with Node.js and is hosted on my old PC.",
@@ -28,14 +28,14 @@
         "img": "/img/prj3.png",
         "alt": "My portfolio",
         "title": "My portfolio",
-        "date": "March 2025",
+        "date": "March 2025 - Today",
         "description": [
             "I've created this portfolio to help me find a job by sharing my projects and expericences.",
             "It's a simple website built on HTML, CSS and JavaScript and hosted on GitHub."
         ]
     },
     {
-        "id": "AFPDF",
+        "id": "afpdf",
         "img": "/img/prj4.png",
         "alt": "AFPDF",
         "title": "Auto Fill PDF",
