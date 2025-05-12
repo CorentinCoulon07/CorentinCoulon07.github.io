@@ -1,0 +1,48 @@
+{
+    "en": {
+        "nav-abt": "About Me",
+        "nav-exp": "Experiences",
+        "nav-prj": "Projects",
+        "nav-ctc": "Contacts",
+
+        "abt-title": "About Me",
+        "abt-p": [
+            "Hi! I'm Corentin, a young graduate in computer programming. ",
+            "I'm passionate about web development and I'm always looking for new challenges. ",
+            "I'm currently looking for a job in the field of programming, ideally in web development. ",
+            "I'm a quick learner and I'm always looking to improve my skills. ",
+            "I'm also a team player and I love working with others to achieve a common goal."
+        ],
+
+        "exp-title": "Experiences",
+        "prj-title": "Projects",
+        "ctc-title": "Contacts",
+        "ctc-p": "Want to have me in your team? Send me a message!",
+
+        "email": "Email:",
+        "phone": "Phone Number:"
+    },
+    "fr": {
+        "nav-abt": "À propos de moi",
+        "nav-exp": "Expériences",
+        "nav-prj": "Projets",
+        "nav-ctc": "Contacts",
+
+        "abt-title": "À propos de moi",
+        "abt-p": [
+            "Salut ! Je suis Corentin, un jeune diplômé en programmation informatique.",
+            "Je suis passionné par le développement web et je suis toujours à la recherche de nouveaux défis. ",
+            "Je cherche actuellement un emploi dans le domaine de la programmation, idéalement dans le développement web.",
+            "J'apprends vite et je cherche toujours à améliorer mes compétences. ",
+            "J'ai aussi l'esprit d'équipe et j'adore travailler avec les autres pour atteindre un objectif commun."
+        ],
+
+        "exp-title": "Expériences",
+        "prj-title": "Projets",
+        "ctc-title": "Contacts",
+        "ctc-p": "Vous souhaitez m’avoir dans votre équipe ? Envoyez-moi un message !",
+
+        "email": "Courriel:",
+        "phone": "Numéro de téléphone:"
+    }
+}

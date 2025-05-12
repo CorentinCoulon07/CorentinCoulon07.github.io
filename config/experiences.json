@@ -3,36 +3,57 @@
         "id": "lacite",
         "img": "/img/etd1.png",
         "alt": "La Cité",
-        "title": "La Cité",
-        "date": "Sept 2022 - June 2024",
-        "description": [
+        "title-en": "La Cité",
+        "title-fr": "La Cité",
+        "date-en": "Sept 2022 - June 2024",
+        "date-fr": "Sept 2022 - Juin 2024",
+        "description-en": [
             "I studied at La Cité in computer programming.",
             "I learned about programming languages such as Java, C#, and Javascript.",
             "I also learned about web development, Databases, and project management."
+        ],
+        "description-fr": [
+            "J'ai étudié à La Cité en programmation informatique.",
+            "J'ai appris des langages de programmation tels que Java, C# et Javascript.",
+            "J'ai également appris le développement web, les bases de données et la gestion de projet."
         ]
     },
     {
         "id": "iga",
         "img": "/img/exp1.png",
         "alt": "IGA - services",
-        "title": "IGA - services",
-        "date": "Nov 2022 - June 2024",
-        "description": [
+        "title-en": "IGA - services",
+        "title-fr": "IGA - services",
+        "date-en": "Nov 2022 - June 2024",
+        "date-fr": "Nov 2022 - Juin 2024",
+        "description-en": [
             "I worked at IGA Extra des Grives as a cashier and a customer service representative.",
             "I was responsible for cashing out customers, answering their questions and helping them find products.",
             "I also had to keep the store clean and organized."
+        ],
+        "description-fr": [
+            "J'ai travaillé à IGA Extra des Grives en tant que caissier et représentant du service client.",
+            "J'étais responsable de l'encaissement des clients, de répondre à leurs questions et de les aider à trouver des produits.",
+            "Je devais également garder le magasin propre et organisé."
         ]
     },
     {
         "id": "accountant-assistance",
         "img": "/img/exp2.png",
         "alt": "Accountant-Assistance",
-        "title": "Accountant Assistance",
-        "date": "March 17th 2025",
-        "description": [
+        "title-en": "Accountant Assistance",
+        "title-fr": "Assistance comptable",
+        "date-en": "March 17th 2025",
+        "date-fr": "17 Mars 2025",
+        "description-en": [
             "I worked for a day as an assistant to an accounter at Exo Construction.",
             "I was responsible for helping her with the paperwork and organizing the files.",
             "It was also the first time I'd had to make and send an invoice to someone."
-        ]    
+        ],
+        "description-fr": [
+            "J'ai travaillé une journée comme assistante d'un comptable chez Exo Construction.",
+            "J'étais responsable de l'aider avec la paperasse et d'organiser les fichiers.",
+            "C'était aussi la première fois que je devais faire et envoyer une facture à quelqu'un."
+        ]
     }
 ]

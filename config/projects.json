@@ -3,47 +3,74 @@
         "id": "cact-high",
         "img": "/img/prj1.png",
         "alt": "Cact-High",
-        "title": "Cact-High",
-        "date": "Dec 2019 - Today",
-        "description": [
+        "title-en": "Cact-High",
+        "title-fr": "Cact-High",
+        "date-en": "Dec 2019 - Today",
+        "date-fr": "Déc 2019 - Aujourd'hui",
+        "description-en": [
             "Cact-high is a board game I worked on for the last 5 years.",
-            "It's a card game that oposes 2 to 8 players in a cactus war where they have to destroy the other's cactus.",
+            "It's a card game that opposes 2 to 8 players in a cactus war where they have to destroy the other's cactus.",
             "The game is hand built with local resources and 3d printing."
+        ],
+        "description-fr": [
+            "Cact-high est un jeu de société sur lequel j'ai travaillé pendant les 5 dernières années.",
+            "C'est un jeu de cartes qui oppose 2 à 8 joueurs dans une guerre de cactus où ils doivent détruire le cactus des autres.",
+            "Le jeu est fabriqué à la main avec des ressources locales et de l'impression 3D."
         ]
     },
     {
         "id": "clipos",
         "img": "/img/prj2.png",
         "alt": "ClipOS",
-        "title": "ClipOS",
-        "date": "Jan 2025 - April 2025",
-        "description": [
+        "title-en": "ClipOS",
+        "title-fr": "ClipOS",
+        "date-en": "Jan 2025 - April 2025",
+        "date-fr": "Jan 2025 - Avril 2025",
+        "description-en": [
             "ClipOS is a self hosted website I made to make it easier for my friends and I to share our video game clips.",
             "The website is built with Node.js and is hosted on my old PC.",
             "ClipOS is only accessible via a local network or a ZeroTier VPN."
-        ]
+        ],
+        "description-fr": [
+            "ClipOS est un site web auto-hébergé que j'ai créé pour permettre à mes amis et moi de partager plus facilement nos clips de jeux vidéo.",
+            "Le site est construit avec Node.js et est hébergé sur mon ancien PC.",
+            "ClipOS n'est accessible que via un réseau local ou un VPN ZeroTier."
+        ]        
     },
     {
         "id": "my-portfolio",
         "img": "/img/prj3.png",
         "alt": "My portfolio",
-        "title": "My portfolio",
-        "date": "March 2025 - Today",
-        "description": [
+        "title-en": "My portfolio",
+        "title-fr": "Mon portfolio",
+        "date-en": "March 2025 - Today",
+        "date-fr": "Mars 2025 - Aujourd'hui",
+        "description-en": [
             "I've created this portfolio to help me find a job by sharing my projects and expericences.",
             "It's a simple website built on HTML, CSS and JavaScript and hosted on GitHub."
+        ],
+        "description-fr": [
+            "J'ai créé ce portfolio pour m'aider à trouver un emploi en partageant mes projets et mes expériences.",
+            "C'est un site web simple construit en HTML, CSS et JavaScript et hébergé sur GitHub."
         ]
     },
     {
         "id": "afpdf",
         "img": "/img/prj4.png",
         "alt": "AFPDF",
-        "title": "Auto Fill PDF",
-        "date": "April 2025",
-        "description": [
+        "title-en": "Auto Fill PDF",
+        "title-fr": "Auto Fill PDF",
+        "date-en": "April 2025",
+        "date-fr": "Avril 2025",
+        "description-en": [
             "Auto Fill PDF is a Python Script I made for Frederick Tremblay, a investment advisor.",
             "The script is used to fill out a PDF form with the information of a client.",
             "It was my first time using Python and I had to learn about the language and how to use it."
+        ],
+        "description-fr": [
+            "Auto Fill PDF est un script Python que j'ai créé pour Frederick Tremblay, un conseiller en investissement.",
+            "Le script est utilisé pour remplir un formulaire PDF avec les informations d'un client.",
+            "C'était ma première fois en Python et j'ai dû apprendre le langage et comment l'utiliser."
         ]
     }
 ]

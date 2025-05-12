@@ -14,6 +14,14 @@ document.addEventListener("scroll", () => {
 const navButton = document.getElementById("nav-button");
 const nav = document.querySelector("nav");
 
+let currentLang = "en";
+
+document.getElementById('toggle-lang').addEventListener('click', () => {
+    currentLang = currentLang === 'en' ? 'fr' : 'en';
+    document.getElementById('lang-text').textContent = currentLang === 'en' ? 'Fr' : 'En';
+    reloadContent();
+});
+
 navButton.addEventListener("click", () => {
     nav.classList.toggle("open");
 });
@@ -54,10 +62,10 @@ function loadExperiences() {
                     <img src="${exp.img}" alt="${exp.alt}" class="experience-img">
                     <div class="label">
                         <div class="title">
-                            <h3>${exp.title}</h3>
-                            <h4>${exp.date}</h4>
+                            <h3>${exp[`title-${currentLang}`]}</h3>
+                            <h4>${exp[`date-${currentLang}`]}</h4>
                         </div>
-                        <p>${exp.description.join(' ')}</p>
+                        <p>${exp[`description-${currentLang}`].join(' ')}</p>
                     </div>
                 `;
                 container.appendChild(div);
@@ -77,10 +85,10 @@ function loadProjects() {
                 div.innerHTML = `
                     <div class="label">
                         <div class="title">
-                            <h3>${prj.title}</h3>
-                            <h4>${prj.date}</h4>
+                            <h3>${prj[`title-${currentLang}`]}</h3>
+                            <h4>${prj[`date-${currentLang}`]}</h4>
                         </div>
-                        <p>${prj.description.join(' ')}</p>
+                        <p>${prj[`description-${currentLang}`].join(' ')}</p>
                     </div>
                     <img src="${prj.img}" alt="${prj.alt}" class="project-img">
                 `;
@@ -89,5 +97,51 @@ function loadProjects() {
         });
 }
 
+function reloadContent() {
+    const scrollY = window.scrollY;
+    
+    // Clear existing content
+    document.getElementById('experiences').innerHTML = '';
+    document.getElementById('projects').innerHTML = '';
+
+
+    loadTranslatableContent()
+    loadExperiences();
+    loadProjects();
+
+    
+    // Restore scroll after a small delay to allow DOM updates
+    setTimeout(() => {
+        window.scrollTo({ top: scrollY, behavior: 'instant' });
+    }, 50);
+}
+
+function loadTranslatableContent() {
+    fetch('/config/main.json')
+        .then(res => res.json())
+        .then(translations => {
+
+            const langData = translations[currentLang];
+
+            document.getElementById('nav-abt').textContent = langData['nav-abt'];
+            document.getElementById('nav-exp').textContent = langData['nav-exp'];
+            document.getElementById('nav-prj').textContent = langData['nav-prj'];
+            document.getElementById('nav-ctc').textContent = langData['nav-ctc'];
+
+            document.getElementById('abt-title').textContent = langData['abt-title'];
+            document.getElementById('abt-p').textContent = langData['abt-p'].join(' ');
+            document.getElementById('experiences').innerHTML = `<h2>${langData['exp-title']}</h2>`;
+            document.getElementById('projects').innerHTML = `<h2>${langData['prj-title']}</h2>`;
+
+            document.getElementById('ctc-title').textContent = langData['ctc-title'];
+            document.getElementById('ctc-p').textContent = langData['ctc-p'];
+
+            document.getElementById('email').textContent = langData['email'];
+            document.getElementById('phone').textContent = langData['phone'];
+        })
+        .catch(err => console.error('Error loading translations:', err));
+}
+
+loadTranslatableContent()
 loadExperiences();
 loadProjects();
