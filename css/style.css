@@ -21,7 +21,7 @@ body {
 #main-header.shrink {
     padding: 10px;
     font-size: 14px;
-    background-color: #222; /* Slightly darker when shrunk */
+    background-color: #222;
 }
 
 #header-label {
@@ -89,17 +89,17 @@ body {
 
 nav {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
-    padding-left: 20px; /* Add padding for spacing */
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
     color: white;
     z-index: 1000;
 }
 
 nav.open {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
+    flex-direction: column;
+    align-items: flex-start;
     background-color : #bbb;
     border-radius : 10px;
     box-shadow : 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -113,11 +113,11 @@ nav ul {
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align list items to the left */
+    align-items: flex-start;
 }
 
 nav li {
-    padding: 10px 0; /* Add vertical spacing */
+    padding: 10px 0;
 }
 
 nav a {
@@ -139,7 +139,7 @@ section {
     display: flex;
     flex-direction: column;
     margin: 0;
-    align-items: flex-start; /* Align items at the top */
+    align-items: flex-start;
 }
 
 .title h3, .title h4 {
@@ -154,7 +154,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start; /* Align items at the top */
+    align-items: flex-start;
     margin: 10px;
     padding: 10px;
     border: 1px solid #333;
@@ -177,7 +177,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start; /* Align items at the top */
+    align-items: flex-start;
     margin: 10px;
     padding: 10px;
     border: 1px solid #333;
@@ -196,6 +196,27 @@ p {
     margin-right: 10px;
 }
 
+#resumes-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#resumes-container button{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 150px; 
+    height: 100%; 
+    cursor: pointer;
+    margin: 5px;
+}
+
+.icon {
+    width: 32px; 
+    height: auto; 
+    margin: 5px;
+}
+
 footer {
     text-align: center;
     background-color: #333;
@@ -211,11 +232,11 @@ footer p {
 
 @media (max-width: 750px) {
     #nav-button {
-        display: block; /* Show the nav button */
-        margin-left: 10px; /* Add some space to the left */
+        display: block;
+        margin-left: 10px;
     }
     
     nav {
-        display: none; /* Hide the nav initially */
+        display: none;
     }
 }

@@ -126,6 +126,7 @@ function loadTranslatableContent() {
             document.getElementById('nav-abt').textContent = langData['nav-abt'];
             document.getElementById('nav-exp').textContent = langData['nav-exp'];
             document.getElementById('nav-prj').textContent = langData['nav-prj'];
+            document.getElementById('nav-cvs').textContent = langData['nav-cvs'];
             document.getElementById('nav-ctc').textContent = langData['nav-ctc'];
 
             document.getElementById('abt-title').textContent = langData['abt-title'];
@@ -135,6 +136,8 @@ function loadTranslatableContent() {
 
             document.getElementById('ctc-title').textContent = langData['ctc-title'];
             document.getElementById('ctc-p').textContent = langData['ctc-p'];
+
+            document.getElementById('cvs-title').textContent = langData['cvs-title'];
 
             document.getElementById('email').textContent = langData['email'];
             document.getElementById('phone').textContent = langData['phone'];

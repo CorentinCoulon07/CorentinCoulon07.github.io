@@ -3,6 +3,7 @@
         "nav-abt": "About Me",
         "nav-exp": "Experiences",
         "nav-prj": "Projects",
+        "nav-cvs": "Resumes",
         "nav-ctc": "Contacts",
 
         "abt-title": "About Me",
@@ -16,6 +17,7 @@
 
         "exp-title": "Experiences",
         "prj-title": "Projects",
+        "cvs-title": "Resume",
         "ctc-title": "Contacts",
         "ctc-p": "Want to have me in your team? Send me a message!",
 
@@ -26,6 +28,7 @@
         "nav-abt": "À propos de moi",
         "nav-exp": "Expériences",
         "nav-prj": "Projets",
+        "nav-cvs": "CVs",
         "nav-ctc": "Contacts",
 
         "abt-title": "À propos de moi",
@@ -39,6 +42,7 @@
 
         "exp-title": "Expériences",
         "prj-title": "Projets",
+        "cvs-title": "CVs",
         "ctc-title": "Contacts",
         "ctc-p": "Vous souhaitez m’avoir dans votre équipe ? Envoyez-moi un message !",
 
