@@ -65,16 +65,29 @@ body {
 }
 
 #toggle-lang {
-    width: 50px;
-    height: 20px;
+    width: 100px;
+    height: 40px;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #bbb;
     align-items: center;
     display: flex;
     justify-content: center;
     cursor: pointer;
+    font-size: 20px;
+
+    transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease, font-size 0.3s ease; 
 }
+
+#toggle-lang.shrink{
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: 12px;
+    
+    transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease, font-size 0.3s ease; 
+}
+
 
 #nav-button {
     display: none;

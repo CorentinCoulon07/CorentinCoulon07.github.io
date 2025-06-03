@@ -1,25 +1,35 @@
 document.addEventListener("scroll", () => {
     const header = document.getElementById("main-header");
     const headerLabel = document.getElementById("header-label");
+    const toggleLang = document.getElementById("toggle-lang");
 
     if (window.scrollY > 50) {
         header.classList.add("shrink");
         headerLabel.classList.add("shrink");
+        toggleLang.classList.add("shrink");
     } else {
         header.classList.remove("shrink");
         headerLabel.classList.remove("shrink");
+        toggleLang.classList.remove("shrink");
     }
 });
 
 const navButton = document.getElementById("nav-button");
 const nav = document.querySelector("nav");
 
-let currentLang = "en";
+// Helper to get URL parameter
+function getLangFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('lang') === 'fr' ? 'fr' : 'en';
+}
+
+let currentLang = getLangFromUrl();
 
 document.getElementById('toggle-lang').addEventListener('click', () => {
-    currentLang = currentLang === 'en' ? 'fr' : 'en';
-    document.getElementById('lang-text').textContent = currentLang === 'en' ? 'Fr' : 'En';
-    reloadContent();
+    const newLang = currentLang === 'en' ? 'fr' : 'en';
+    const params = new URLSearchParams(window.location.search);
+    params.set('lang', newLang);
+    window.location.search = params.toString(); // This reloads the page
 });
 
 navButton.addEventListener("click", () => {
@@ -120,7 +130,6 @@ function loadTranslatableContent() {
     fetch('/config/main.json')
         .then(res => res.json())
         .then(translations => {
-
             const langData = translations[currentLang];
 
             document.getElementById('nav-abt').textContent = langData['nav-abt'];
@@ -141,10 +150,13 @@ function loadTranslatableContent() {
 
             document.getElementById('email').textContent = langData['email'];
             document.getElementById('phone').textContent = langData['phone'];
+            // Update the language button text
+            document.getElementById('lang-text').textContent = currentLang === 'en' ? 'Fr' : 'En';
         })
         .catch(err => console.error('Error loading translations:', err));
 }
 
-loadTranslatableContent()
+// On page load, use currentLang from URL
+loadTranslatableContent();
 loadExperiences();
 loadProjects();
