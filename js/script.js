@@ -17,7 +17,6 @@ document.addEventListener("scroll", () => {
 const navButton = document.getElementById("nav-button");
 const nav = document.querySelector("nav");
 
-// Helper to get URL parameter
 function getLangFromUrl() {
     const params = new URLSearchParams(window.location.search);
     return params.get('lang') === 'fr' ? 'fr' : 'en';
@@ -29,7 +28,7 @@ document.getElementById('toggle-lang').addEventListener('click', () => {
     const newLang = currentLang === 'en' ? 'fr' : 'en';
     const params = new URLSearchParams(window.location.search);
     params.set('lang', newLang);
-    window.location.search = params.toString(); // This reloads the page
+    window.location.search = params.toString();
 });
 
 navButton.addEventListener("click", () => {
@@ -39,15 +38,15 @@ navButton.addEventListener("click", () => {
 window.addEventListener("resize", () => {
     if (window.innerWidth > 750) {
         nav.classList.remove("open");
-        nav.style.display = ""; // Let the CSS media query control display
+        nav.style.display = "";
     }
 });
 
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevent default jump behavior
+        e.preventDefault();
         
-        const targetId = link.getAttribute('href').substring(1); // Get the target section ID
+        const targetId = link.getAttribute('href').substring(1);
         const targetSection = document.getElementById(targetId);
 
         if (targetSection) {
@@ -110,17 +109,13 @@ function loadProjects() {
 function reloadContent() {
     const scrollY = window.scrollY;
     
-    // Clear existing content
     document.getElementById('experiences').innerHTML = '';
     document.getElementById('projects').innerHTML = '';
-
 
     loadTranslatableContent()
     loadExperiences();
     loadProjects();
 
-    
-    // Restore scroll after a small delay to allow DOM updates
     setTimeout(() => {
         window.scrollTo({ top: scrollY, behavior: 'instant' });
     }, 50);
@@ -150,13 +145,24 @@ function loadTranslatableContent() {
 
             document.getElementById('email').textContent = langData['email'];
             document.getElementById('phone').textContent = langData['phone'];
-            // Update the language button text
+            
             document.getElementById('lang-text').textContent = currentLang === 'en' ? 'Fr' : 'En';
         })
         .catch(err => console.error('Error loading translations:', err));
 }
 
-// On page load, use currentLang from URL
+document.addEventListener('click', function(e) {
+    let elem = e.target.closest('.experience, .project');
+    if (elem) {
+        // elem.id is like "exp-xxx" or "prj-xxx"
+        let [type, ...rest] = elem.id.split('-');
+        let id = rest.join('-');
+        // Normalize type to "exp" or "prj"
+        window.location.href = `/details.html?type=${type}&id=${encodeURIComponent(id)}&lang=${currentLang}`;
+        return;
+    }
+});
+
 loadTranslatableContent();
 loadExperiences();
 loadProjects();
