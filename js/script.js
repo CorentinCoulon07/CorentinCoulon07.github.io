@@ -122,7 +122,7 @@ function reloadContent() {
 }
 
 function loadTranslatableContent() {
-    fetch('/config/main.json')
+    return fetch('/config/main.json')
         .then(res => res.json())
         .then(translations => {
             const langData = translations[currentLang];
@@ -163,6 +163,7 @@ document.addEventListener('click', function(e) {
     }
 });
 
-loadTranslatableContent();
-loadExperiences();
-loadProjects();
+loadTranslatableContent().then(() => {
+    loadExperiences();
+    loadProjects();
+});

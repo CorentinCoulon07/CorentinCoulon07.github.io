@@ -175,6 +175,7 @@ p {
     width: 100%;
     max-width: 450px;
     min-width: 350px;
+    cursor: pointer;
 }
 
 .project-img {
@@ -198,6 +199,7 @@ p {
     width: 100%;
     max-width: 450px;
     min-width: 350px;
+    cursor: pointer;
 }
 
 .experience-img {

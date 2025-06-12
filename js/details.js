@@ -47,6 +47,13 @@ if (type && id) {
                 document.title = item[`title-${currentLang}`];
                 // Set the page-title h3
                 document.getElementById('page-title').textContent = item[`title-${currentLang}`];
+                // Set the main h2 title
+                document.getElementById('details-title').textContent = item[`title-${currentLang}`];
+                // Set the details paragraph
+                const detailsKey = `details-${currentLang}`;
+                const descKey = `description-${currentLang}`;
+                const detailsArr = item[detailsKey] || item[descKey] || [];
+                document.getElementById('details-p').innerHTML = detailsArr.join('');
             }
             console.log(item); // Log the full object to the console
         })
