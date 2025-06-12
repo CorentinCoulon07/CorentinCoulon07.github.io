@@ -18,12 +18,16 @@
             "Le jeu est fabriqué à la main avec des ressources locales et de l'impression 3D."
         ],
         "details-en": [
-            "Cact-High is a board game I created in 2019. It was born out of the desire to create a game that is entirely based on strategy.",
+            "Cact-High is a board game I started working on and off since 2019. It was born out of the desire to create a game that is entirely based on strategy. ",
             "2nd p"
         ],
         "details-fr": [
-            "Cact-High est un jeu de société que j'ai créé en 2019. Il est né de l'envie de créer un jeu qui se base entierement sur la stratégie.",
-            "2e p"
+            "Cact-High est un jeu de société sur lequel j'ai commencé à travailler de temps en temps depuis 2019. ", 
+            "Il est né du désir de créer un jeu entièrement basé sur la stratégie. ",
+            "/-/",
+            "/-/Le jeu oppose 2 à 8 joueurs qui incarnent des cactus et s'affrontent pour détruire le cactus des adversaires. ",
+            "Pour y arriver, ils utilisent des cartes qui leur permettent de lancer des attaques, de se défendre ou d'utiliser des capacités spéciales. ",
+            "Chaque joueurs commencent avec 100 points de hauteur et le but est de réduire les points de hauteur des adversaires à 0. "
         ]
     },
     {

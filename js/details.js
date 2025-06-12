@@ -53,7 +53,9 @@ if (type && id) {
                 const detailsKey = `details-${currentLang}`;
                 const descKey = `description-${currentLang}`;
                 const detailsArr = item[detailsKey] || item[descKey] || [];
-                document.getElementById('details-p').innerHTML = detailsArr.join('');
+                document.getElementById('details-p').innerHTML = detailsArr
+                    .map(line => line.replace(/\/-\//g, '<br>'))
+                    .join('');
             }
             console.log(item); // Log the full object to the console
         })
