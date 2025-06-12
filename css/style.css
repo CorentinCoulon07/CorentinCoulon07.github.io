@@ -135,6 +135,11 @@ nav ul {
 
 nav li {
     padding: 10px 0;
+    transition: translate 0.2s;
+}
+
+nav li:hover {
+    translate: 5px; 
 }
 
 nav a {
@@ -181,6 +186,11 @@ p {
     cursor: pointer;
 
     box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.05); 
 }
 
 .project-img {
@@ -206,6 +216,11 @@ p {
     cursor: pointer;
 
     box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.experience:hover {
+    transform: scale(1.05); 
 }
 
 .experience-img {
@@ -233,6 +248,11 @@ p {
     margin: 5px;
     
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+#resumes-container button:hover {
+    transform: scale(1.05); 
 }
 
 .icon {
